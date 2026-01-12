@@ -59,13 +59,22 @@
             grid-row: span 2;
         }   
 
-
-
-
-
         @media screen and (max-width:576px) {
             .main{
                 flex-direction: column-reverse;
+            }
+        }
+
+        @media screen and (max-width:576px) {
+             .images{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            
+            }
+            .beg-layout, .small-layout, .normel-layout, .last-layout{
+                grid-column: span 1;
+                grid-row: span 1;
             }
         }
     </style>
