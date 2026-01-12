@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+
+    <style>
+
+            .main{
+                display: flex;
+                gap: 10px;
+            }
+
+        .container{
+            border:2px solid aqua;
+            padding:10px;
+            margin:10px;
+            box-sizing: border-box;
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .images{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 150px);
+            gap: 10px;
+            margin: 10px;
+        }
+        .images div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .beg-layout{
+            grid-column: span 6;
+            grid-row: span 2;
+        }
+        .small-layout{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .normel-layout{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .last-layout{
+            grid-column: span 1;
+            grid-row: span 2;
+        }   
+
+
+
+
+
+        @media screen and (max-width:576px) {
+            .main{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+    <h1>responsive web design</h1>
+    </div>
+  <div class="main">
+     <div class="container">
+    <h3>box-1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam amet corrupti iure veritatis expedita quo dolores ipsa magnam error.lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam amet corrupti iure veritatis expedita quo dolores ipsa magnam error.lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam amet corrupti iure veritatis expedita quo dolores ipsa magnam error.</p>
+   </div>
+    <div class="container">
+    <h3>box-2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam amet corrupti iure veritatis expedita quo dolores ipsa magnam error.lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam amet corrupti iure veritatis expedita quo dolores ipsa magnam error.lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam amet corrupti iure veritatis expedita quo dolores ipsa magnam error.</p>
+   </div>
+  </div>
+    
+    <div class="images">
+        <div class="beg-layout">
+            <img src="./responsive-layout-example/images/A.jpg" alt="">
+        </div>
+          <div class="small-layout">
+            <img src="./responsive-layout-example/images/B.jpg" alt="">
+        </div>
+          <div class="small-layout">
+            <img src="./responsive-layout-example/images/C.jpg" alt="">
+        </div>
+          <div class="normel-layout">
+            <img src="./responsive-layout-example/images/D.jpg" alt="">
+        </div>
+          <div class="normel-layout">
+            <img src="./responsive-layout-example/images/E.jpg" alt="">
+        </div>
+          <div class="small-layout">
+            <img src="./responsive-layout-example/images/F.jpg" alt="">
+        </div>
+          <div class="last-layout">
+            <img src="./responsive-layout-example/images/G.jpg" alt="">
+        </div>
+          <div class="last-layout">
+            <img src="./responsive-layout-example/images/H.jpg" alt="">
+        </div>
+        
+          <div class="small-layout">
+            <img src="./responsive-layout-example/images/I.jpg" alt="">
+        </div>
+    </div>
+
+
+</body>
+</html>
