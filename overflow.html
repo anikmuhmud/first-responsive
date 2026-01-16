@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-hidden</title>
+    <style>
+        .box-2{
+            border: 2px solid black;
+            width: 300px;
+            height: 450px;
+            overflow: hidden;
+            overflow-y: scroll;
+     
+        }
+        .container, .inner{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+           
+        }
+        .container{
+            background-color: lightblue;
+
+        }
+        .inner{
+            background-color: lightcoral;
+            transform: scale(.5) translate(-80px, -40px) rotate(45deg);
+            transition: transform  2s, background-color 2s;   
+        }
+        .inner:hover{
+            transform: scale(1) translate(100px) rotate(45deg);
+            background-color: limegreen;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae quae provident eaque veritatis quod tempora eius quidem praesentium? Cumque distinctio corporis saepe error itaque, quas explicabo sint id tempora numquam provident fugiat iste ipsam deleniti dignissimos nesciunt nihil ipsum quam? Commodi quam consequatur, excepturi autem " class="box">
+            <h2>my content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minus blanditiis, dolor error explicabo iste sapiente autem quasi voluptas ex maxime nihil quia, provident quibusdam aliquam esse. In, mollitia earum!</p>
+        </div>
+        <div class="box-2">
+            <h3>my content-2</h3>
+            <p title="ccusamus at quisquam. Natus repellendus unde deserunt omnis quasi sapiente odit eaque laudantium quae, accusantium consequatur minima cumque nostrum tempore" class="ellipsis">corrupti eum amet placeat. Provident, nisi? Iure dolores ex illo sapiente, quidem libero accusamus at quisquam. Natus repellendus unde deserunt omnis quasi sapiente odit eaque laudantium quae, accusantium consequatur minima cumque nostrum tempore dolores? Ab cum recusandae suscipit modi minima sunt eos tempore consectetur perferendis exercitationem, eligendi ipsum accusamus. Nisi quis praesentium voluptates similique tempore optio dolorum molestias eum? Porro, alias. Quos nisi quibusdam qui sapiente accusantium? Error sapiente porro accusantium, rerum, libero culpa ad quas voluptas provident cum dolorum reiciendis veritatis dolor quasi ipsa maiores? Laudantium accusantium, in molestias voluptatem laborum quae ullam adipisci debitis tenetur eius cupiditate, aliquid reiciendis iure? Illum doloribus pariatur id exercitationem eligendi explicabo ullam eveniet error iusto non tempora voluptate repellat provident repellendus ad accusantium, veritatis facere nostrum, incidunt eum. Distinctio consequatur iusto eum dicta hic dignissimos quam magnam, tempore fugit, ab voluptatibus beatae sed fuga aliquid illum voluptate amet repellendus. Reiciendis repellat omnis temporibus odio, quos quo!</p>
+        </div>
+            
+        <div class="container">
+            <div class="inner">Inner 1</div>
+        </div>
+        <div class="container">
+            <div class="inner">Inner 2</div>
+        </div>
+        <div class="container">
+            <div class="inner">Inner 3</div>
+        </div>
+    </section>
+    
+</body>
+</html>
